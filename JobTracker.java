@@ -20,7 +20,7 @@ public class JobTracker {
 		Client client = ClientBuilder.newClient();
 		// Application id of first application.
 		String applicationId = ob.getApplications(client).get(0);
-		// Application id of first job.
+		// Job id of first job.
 		String jobId = ob.getJobs(client, applicationId).get(0);
 
 		Set<String> finishedTasks = new HashSet<>();
